@@ -1,0 +1,21 @@
+# Ignore environment variables / MySQL credentials
+.env
+config.json
+
+# Ignore Python virtual environments and cache
+venv/
+__pycache__/
+*.pyc
+
+# Ignore generated dummy data (from your Faker script)
+# Assuming your script exports data to files before inserting, or generates logs
+*.csv
+*.json
+# If you output to a specific folder, ignore the whole folder:
+# dummy_data/
+
+# Ignore MySQL data dumps or local backups
+# (Never push real database exports or massive SQL inserts to GitHub)
+*.sql.gz
+*.dump
+local_backup.sql
